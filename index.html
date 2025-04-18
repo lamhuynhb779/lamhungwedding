@@ -399,11 +399,15 @@
     <!-- <div class="bottom_left">
       <audio id="player" src="mus.mp3"></audio>
     </div> -->
-    <script>
-      window.addEventListener('load', function() {
-        console.log('All assets are loaded');
-        document.getElementById("player").play();
-      });
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+          console.log('All assets are loaded');
+          document.getElementById("player").play();
+  });
+      // window.addEventListener('load', function() {
+      //   console.log('All assets are loaded');
+      //   document.getElementById("player").play();
+      // });
     </script>
   </body>
 </html>
