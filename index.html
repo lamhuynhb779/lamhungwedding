@@ -388,12 +388,11 @@
 
     <div class="bottom_left">
       <audio id="player" src="mus.mp3"></audio>
-      <div>
-        <i
-          class="fa fa-music fa-2x"
-          onclick="document.getElementById('player').play()"
-        ></i>
-      </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById('player').play();
+      });
+    </script>
   </body>
 </html>
