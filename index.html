@@ -391,6 +391,7 @@
         <audio id="player1" src="mus.mp3"></audio>
         <div>
           <i
+            id="myclick"
             class="fa fa-music fa-2x"
             onclick="document.getElementById('player1').play()"
           ></i>
@@ -406,7 +407,10 @@
     <script src="js/ekko-lightbox.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('#player1')[0].play();
+        // $('#player1')[0].play();
+        setTimeout(function(){
+        $('#myclick').trigger('click');
+    }, 4000);
       });
     </script>
 
