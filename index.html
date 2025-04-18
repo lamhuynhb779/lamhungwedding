@@ -65,12 +65,15 @@
       src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2"
     ></script>
     <div class="page-content">
-      <div>
+      <!-- <div>
         <audio autoplay>
           <source src="mus.mp3" type="audio/mpeg">
           <source src="mus.ogg" type="audio/ogg">
           Your browser does not support the audio element.
         </audio> 
+      </div> -->
+      <div>
+        <audio id="player" src="mus.mp3"></audio>
       </div>
       <div class="div">
         <div class="ww-home-page" id="home">
@@ -393,11 +396,11 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/ekko-lightbox.min.js"></script>
 
-    <div class="bottom_left">
-      <audio id="player" src="mus.mp3" autoplay></audio>
-    </div>
+    <!-- <div class="bottom_left">
+      <audio id="player" src="mus.mp3"></audio>
+    </div> -->
     <script>
-      document.getElementById("player").autoplay;
+      document.getElementById("player").play();
     </script>
   </body>
 </html>
