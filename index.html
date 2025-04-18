@@ -400,7 +400,10 @@
       <audio id="player" src="mus.mp3"></audio>
     </div> -->
     <script>
-      document.getElementById("player").play();
+      window.addEventListener('load', function() {
+        console.log('All assets are loaded');
+        document.getElementById("player").play();
+      });
     </script>
   </body>
 </html>
